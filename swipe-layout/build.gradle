@@ -21,7 +21,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'com.google.android.material:material:1.0.0'
 }
 
 tasks.register('sourcesJar', Jar) {

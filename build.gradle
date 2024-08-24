@@ -1,10 +1,10 @@
 buildscript {
 
     project.ext {
-        buildToolsVersion = "34.0.0"
-        sdkVersion = 34
+        buildToolsVersion = "33.0.1"
+        sdkVersion = 33
         minSdkVersion = 21
-        targetSdkVersion = 34
+        targetSdkVersion = 33
         versionName = "1.2.0"
         versionCode = 12000
     }
@@ -16,7 +16,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.5.2'
+        classpath 'com.android.tools.build:gradle:7.4.0'
     }
 }
 

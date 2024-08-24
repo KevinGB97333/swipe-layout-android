@@ -1,4 +1,4 @@
-package gb.kevin.swipe_layout;
+package gb.kevin.swipe_layout.testapp;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
