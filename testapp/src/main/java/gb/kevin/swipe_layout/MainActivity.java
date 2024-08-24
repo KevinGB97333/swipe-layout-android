@@ -1,4 +1,4 @@
-package ru.rambler.swipe_layout;
+package gb.kevin.swipe_layout;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import ru.rambler.libs.swipe_layout.SwipeLayout;
+import gb.kevin.libs.swipe_layout.SwipeLayout;
 
 public class MainActivity extends AppCompatActivity {
 

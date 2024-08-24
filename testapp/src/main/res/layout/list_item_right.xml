@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<gb.kevin.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/swipe_layout"
@@ -53,4 +53,4 @@
 
 
     </LinearLayout>
-</ru.rambler.libs.swipe_layout.SwipeLayout>
+</gb.kevin.libs.swipe_layout.SwipeLayout>

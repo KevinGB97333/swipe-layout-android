@@ -19,7 +19,7 @@ You could disable swipe completely calling method `setSwipeEnabled(false)` or us
 To disable swipe from one of the side you could use methods `setLeftSwipeEnabled(false)` and `setRightSwipeEnabled(false)` or via XML:
 
 ```xml
-<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<gb.kevin.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/item_height"
@@ -30,7 +30,7 @@ To disable swipe from one of the side you could use methods `setLeftSwipeEnabled
 Full list of widget attributes can be found [here](https://github.com/rambler-digital-solutions/swipe-layout-android/blob/develop/swipe-layout/src/main/res/values/attrs.xml).
 
 ```xml
-<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<gb.kevin.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/item_height">
@@ -66,7 +66,7 @@ Full list of widget attributes can be found [here](https://github.com/rambler-di
 
         ...
     </FrameLayout>
-</ru.rambler.libs.swipe_layout.SwipeLayout>
+</gb.kevin.libs.swipe_layout.SwipeLayout>
 ```
 
 ## License

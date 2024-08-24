@@ -18,7 +18,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'ru.rambler.swipe_layout'
+    namespace 'gb.kevin.swipe_layout'
 }
 
 dependencies {

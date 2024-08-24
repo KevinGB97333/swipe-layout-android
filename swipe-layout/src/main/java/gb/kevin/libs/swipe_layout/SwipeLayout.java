@@ -1,4 +1,4 @@
-package ru.rambler.libs.swipe_layout;
+package gb.kevin.libs.swipe_layout;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.animation.AccelerateInterpolator;
 
-import com.rds.swipelayout.R;
+import gb.kevin.swipelayout.R;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;

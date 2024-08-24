@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="ru.rambler.swipe_layout.MainActivity">
+    tools:context=".MainActivity">
 
 </androidx.recyclerview.widget.RecyclerView>
