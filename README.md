@@ -4,11 +4,19 @@ Flexible Android Widget
 
 ![sample](https://github.com/rambler-digital-solutions/swipe-layout-android/blob/master/rambler.mail.gif?raw=true)
 
-## Download
+## Dependency
+Add this in your root `build.gradle` file (**not** your module `build.gradle` file):
 
-Download via Gradle:
-```groovy
-implementation 'ru.rambler.android:swipe-layout:1.1.0'
+```gradle
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+Then, add the library to your module `build.gradle`
+```gradle
+implementation 'com.github.KevinGB97333:swipe-layout-android:1.0.0'
 ```
 ## Usage
 
@@ -27,7 +35,7 @@ To disable swipe from one of the side you could use methods `setLeftSwipeEnabled
     app:right_swipe_enabled="true"/>
 ```
 
-Full list of widget attributes can be found [here](https://github.com/rambler-digital-solutions/swipe-layout-android/blob/develop/swipe-layout/src/main/res/values/attrs.xml).
+Full list of widget attributes can be found [here](https://github.com/KevinGB97333/swipe-layout-android/blob/develop/swipe-layout/src/main/res/values/attrs.xml).
 
 ```xml
 <gb.kevin.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
