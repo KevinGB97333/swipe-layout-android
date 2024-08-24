@@ -1,17 +1,12 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
-
-def version = "1.1.0"
-def code = 11000
 
 android {
-    compileSdkVersion 28
+
+    compileSdkVersion rootProject.ext.sdkVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 28
-        versionCode code
-        versionName version
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.sdkVersion
     }
 
     buildTypes {
@@ -20,46 +15,32 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.rds.swipelayout'
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.material:material:1.12.0'
 }
 
-task sourcesJar(type: Jar) {
+tasks.register('sourcesJar', Jar) {
     project
     from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
+    archiveClassifier = 'sources'
 }
 
-task javadoc(type: Javadoc) {
+tasks.register('javadoc', Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath = files(android.getBootClasspath().join(File.pathSeparator))
 }
 
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
+tasks.register('javadocJar', Jar) {
+    dependsOn javadoc
+    archiveClassifier = 'javadoc'
     from javadoc.destinationDir
 }
 
 artifacts {
     archives javadocJar
     archives sourcesJar
-}
-
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-
-publish {
-    bintrayUser = properties.getProperty('bintray.user')
-    bintrayKey = properties.getProperty('bintray.apikey')
-    dryRun = false
-    groupId = 'ru.rambler.android'
-    artifactId = 'swipe-layout'
-    publishVersion = version
-    userOrg = 'eduard'
-    desc = 'Android UI widget'
-    licences = ['Apache-2.0']
-    website = 'https://github.com/rambler-digital-solutions/swipe-layout-android'
 }
