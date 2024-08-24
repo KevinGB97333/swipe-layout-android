@@ -1,7 +1,7 @@
 ### 1.2.0
 * Move from JCenter to Jitpack.io  
 * Drop jetifier support 
-* Update dependencies and libraries 
+* Update gradle
 * Update configurations
 
 ### 1.1.0
