@@ -24,18 +24,18 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
 }
 
-tasks.register('sourcesJar', Jar) {
+task sourcesJar(type: Jar) {
     project
     from android.sourceSets.main.java.srcDirs
     archiveClassifier = 'sources'
 }
 
-tasks.register('javadoc', Javadoc) {
+task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath = files(android.getBootClasspath().join(File.pathSeparator))
 }
 
-tasks.register('javadocJar', Jar) {
+task javadocJar(type: Jar, dependsOn: javadoc) {
     dependsOn javadoc
     archiveClassifier = 'javadoc'
     from javadoc.destinationDir
