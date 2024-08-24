@@ -17,7 +17,7 @@ allprojects {
 
 Then, add the library to your module `build.gradle`
 ```gradle
-implementation 'com.github.KevinGB97333:swipe-layout-android:1.0.0'
+implementation 'com.github.KevinGB97333:swipe-layout-android:1.2.0'
 ```
 ## Usage
 
