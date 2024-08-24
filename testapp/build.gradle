@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.sdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "ru.rambler.swipe_layout"
@@ -18,7 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'gb.kevin.swipe_layout'
+    namespace 'gb.kevin.swipe_layout.testapp'
 }
 
 dependencies {
